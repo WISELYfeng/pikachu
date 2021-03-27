@@ -127,7 +127,7 @@ exports.default = void 0;
 var string = "\n.skin *{\n    box-sizing: border-box;\n    margin:0;\n    padding:0;\n}\n.skin *::after, *::before{\n    box-sizing: border-box;\n}\n.skin{\n    position: relative;\n    background:#ffe600;\n    min-height:50vh;\n}\n.nose{\n    border:10px solid black;\n    border-color: black transparent transparent;\n    border-bottom: none;\n    width: 0px;\n    height: 0px;\n    position: relative;\n    left:50%;\n    top:145px;\n    margin-left: -10px;\n}\n@keyframes wave{\n    0%{\n        transform: rotate(0deg);\n    }\n    33%{\n        transform: rotate(5deg);\n    }\n    66%{\n        transform: rotate(-5deg);\n    }\n    100%{\n        transform: rotate(0deg);\n    }\n}\n.nose:hover{\n    transform-origin: center bottom;\n    animation: wave .4s infinite linear;\n}\n.yuan{\n    position: absolute;\n    width:20px;\n    height:6px;\n    top:-16px;\n    left:-10px;\n    border-radius: 10px 10px 0 0;\n    background: black;\n}\n.eye{\n    border:2px solid #000;\n    width:64px;\n    height:64px;\n    position:absolute;\n    left:50%;\n    top:100px;\n    margin-left:-32px;\n    background: #2e2e2e;\n    border-radius: 50%;\n}\n.eye::before{\n    content:'';\n    display: block;\n    border:3px solid #000;\n    width:28px;\n    height:28px;\n    background: #fff;\n    border-radius: 50%;\n    position: relative;\n    left:4px;\n    top:2px;\n}\n.eye.left{\n    transform: translateX(-100px);\n}\n.eye.right{\n    transform: translateX(100px);\n}\n.mouth{\n    width:200px;\n    height:200px;\n    position:absolute;\n    left:50%;\n    top:175px;\n    margin-left: -100px;\n}\n.mouth .up{\n    display: flex;\n    justify-content: center;\n    z-index: 2;\n    position: relative;\n    top:-8px;\n}\n.mouth .lip{\n    border:3px solid black;\n    height:30px;\n    width:100px;\n    border-radius: 10% 60% 30% 70%;\n    border-top-color:transparent;\n    border-right-color:transparent;\n    background:#ffe600;\n}\n.mouth .up .lip.left{\n    transform: rotate(-20deg) translateX(5px);\n}\n.mouth .up .lip.right{\n    transform: rotateY(180deg) rotate(-20deg) translateX(5px);\n}\n.mouth .down{\n    height: 180px;\n    position:absolute;\n    top:0;\n    min-width: 100%;\n    overflow:hidden;\n}\n.mouth .down .angle-1{\n    border:3px solid black;\n    width: 150px;\n    height: 1000px;\n    position: absolute;\n    bottom:0;\n    left:50%;\n    margin-left:-75px;\n    border-radius:75px/300px;\n    background: #9b000a;\n    overflow: hidden;\n}\n.mouth .down .angle-1 .angle-2{\n    width: 200px;\n    height:300px;\n    background: #ff485f;\n    position:absolute;\n    bottom:-155px;\n    left:50%;\n    margin-left:-100px;\n    border-radius: 100px;\n}\n.face{\n    width:88px;\n    height:88px;\n    border:3px solid black;\n    position:absolute;\n    top:200px;\n    left:50%;\n    margin-left:-44px;\n}\n.face > img{\n    position: absolute;\n    top:50%;\n    left:50%;\n}\n.face.left{\n    transform: translateX(-180px);\n    background:#ff0000;\n    border-radius:50%;\n}\n.face.left > img{\n    transform:rotateY(180deg);\n    transform-origin: 0 0;\n}\n.face.right{\n    transform: translateX(180px);\n    background:#ff0000;\n    border-radius:50%;\n}\n";
 var _default = string;
 exports.default = _default;
-},{}],"main.js":[function(require,module,exports) {
+},{}],"test.js":[function(require,module,exports) {
 "use strict";
 
 var _css = _interopRequireDefault(require("./css"));
@@ -225,7 +225,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55363" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55293" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -401,5 +401,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/Administrator.PC-201302040055/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
-//# sourceMappingURL=/main.1f19ae8e.js.map
+},{}]},{},["C:/Users/Administrator.PC-201302040055/AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","test.js"], null)
+//# sourceMappingURL=/test.e98b79dd.js.map
